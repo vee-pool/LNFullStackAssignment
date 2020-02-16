@@ -12,6 +12,8 @@ exports.createUser = async (user) => {
                 role: userRecord.dataValues.role,
                 email: userRecord.dataValues.email,
                 status: userRecord.dataValues.status,
+                name: userRecord.dataValues.name,
+                mobile_no: userRecord.dataValues.mobile_no
             }
         };
     } catch (error) {
