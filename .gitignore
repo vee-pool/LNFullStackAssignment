@@ -1,3 +1,11 @@
+src/backend/node_modules
+src/frontend/node_modules
+src/backend/.env
+src/backend/package-lock.json
+src/backend/views
+src/backend/public
+src/backend/seeders
+src/backend/migration
 # Logs
 logs
 *.log
