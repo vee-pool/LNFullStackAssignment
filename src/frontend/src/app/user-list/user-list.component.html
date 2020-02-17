@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role Type</th>
+        <th>Status</th>
+        <th>Edit</th>
+    </tr>
+
+    <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.role}}</td>
+        <td>{{user.status}}</td>
+        <td>
+            <img src="../../assets/ico_edit.svg"/>
+        </td>
+    </tr>
+</table>

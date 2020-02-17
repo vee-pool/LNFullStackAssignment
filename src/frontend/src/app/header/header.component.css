@@ -1,0 +1,87 @@
+.logo {
+    display: block;
+    text-indent: -9999px;
+    width: 100px;
+    height: 82px;
+    background-size: 100px 82px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+.users {
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    height: 50px;
+    background-size: 100px 82px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background-color: darkgray; */
+  }
+
+.settings {
+    display: block;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    background-size: 100px 82px;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* background-color: darkgray; */
+  }
+.dashboard {
+  color: white;
+    display: block;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    background-size: 100px 82px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+.notification {
+    color: white;
+      display: block;
+      text-indent: -9999px;
+      width: 30px;
+      height: 30px;
+      background-size: 100px 82px;
+      padding-left: 250px;
+      padding-right: 5px;
+      margin-left: auto;
+    }
+
+.logged_in_user {
+  color: azure;
+}
+
+.user {
+  color: white;
+      display: block;
+      text-indent: -9999px;
+      width: 30px;
+      height: 30px;
+      background-size: 100px 82px;
+      padding-left: 5px;
+      padding-right: 25px;
+      margin-left: auto;
+}
+
+.downarrow {
+  color: white;
+      display: block;
+      text-indent: -9999px;
+      width: 30px;
+      height: 30px;
+      background-size: 100px 82px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: auto;
+}
+.header {
+  height: 90px;
+  background: black;
+  display: flex;
+  align-items: center;
+}
