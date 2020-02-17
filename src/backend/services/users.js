@@ -35,13 +35,14 @@ exports.findByEmail = async (email) => {
 exports.getAll = async () => {
     try {
         const userRecords = await models.users.findAll({
-            attributes: ['id', 'email', 'role', 'status', 'mobile_no'],
+            attributes: ['id', 'name', 'email', 'role', 'status', 'mobile_no'],
             raw: true
         });
     
         return userRecords.map(userRecord => {
             return {
                 id: userRecord.id,
+                name: userRecord.name,
                 role: userRecord.role,
                 email: userRecord.email,
                 status: userRecord.status,
