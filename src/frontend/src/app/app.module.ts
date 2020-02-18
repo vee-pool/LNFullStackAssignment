@@ -1,24 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { InlineSVGModule } from "ng-inline-svg";
+import { MatFormFieldModule, MatButtonModule, MatRadioModule, MatInputModule, MatDialogModule } from "@angular/material";
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AddUserDialogComponent } from './add-user-dialog/add-user-dialog.component';
 
 @NgModule({
+  entryComponents: [
+    AddUserDialogComponent
+  ],
   declarations: [
     AppComponent,
     HeaderComponent,
-    UserListComponent
+    UserListComponent,
+    AddUserDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    InlineSVGModule.forRoot()
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatRadioModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
