@@ -45,9 +45,7 @@ router.get('/users', async (req, res, next) => {
   try {
     const usersData = await userService.getAll();
 
-    return res.json({
-      'data': usersData
-    })
+    return res.json(usersData);
   } catch (error) {
     return res.status(500);
   }
