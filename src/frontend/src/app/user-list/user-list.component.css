@@ -13,3 +13,43 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+  .users {
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    height: 50px;
+    background-size: 100px 82px;
+    padding-left: 30px;
+    padding-right: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* background-color: darkgray; */
+  }
+
+  .menu-bar {
+    height: 90px;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+  }
+
+  .add-user {
+  
+    font-size: x-large;
+      font-family: Arial, Helvetica, sans-serif;
+      display:inline-block;
+      color:white;
+      border:1px solid #CCC;
+      background:orange;
+      box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+      cursor:pointer;
+      vertical-align:middle;
+      width: 150px;
+      height: 50px;
+      padding: 5px;
+      text-align: center;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+  }

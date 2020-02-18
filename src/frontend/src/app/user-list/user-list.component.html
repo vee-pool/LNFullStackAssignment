@@ -1,19 +1,26 @@
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Role Type</th>
-        <th>Status</th>
-        <th>Edit</th>
-    </tr>
-
-    <tr *ngFor="let user of users">
-        <td>{{user.name}}</td>
-        <td>{{user.email}}</td>
-        <td>{{user.role}}</td>
-        <td>{{user.status}}</td>
-        <td>
-            <img src="../../assets/ico_edit.svg"/>
-        </td>
-    </tr>
-</table>
+<div>
+    <div class="menu-bar">
+        <img class="users" src="../../assets/ico_users.svg"/>
+        <label style="font-size: x-large;">Users</label>
+        <button class="add-user" (click)="openAddUserDialog()">Add Users</button>
+    </div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role Type</th>
+            <th>Status</th>
+            <th>Edit</th>
+        </tr>
+    
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.role}}</td>
+            <td>{{user.status}}</td>
+            <td>
+                <img src="../../assets/ico_edit.svg"/>
+            </td>
+        </tr>
+    </table>
+</div>
