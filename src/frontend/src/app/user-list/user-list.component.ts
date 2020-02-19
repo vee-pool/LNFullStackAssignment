@@ -63,6 +63,8 @@ export class UserListComponent implements OnInit {
     this.userService.addUser(user).subscribe(response => {
       console.log('POST status', response.status);
       this.getUsers();
+    }, error => {
+      alert(error);
     })
   }
 
@@ -72,6 +74,8 @@ export class UserListComponent implements OnInit {
     delete user.id;
     this.userService.editUser(userId, user).subscribe(response => {
       this.getUsers();
+    }, error => {
+      alert(error);
     })
   }
 }
