@@ -3,8 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 
 import { User } from '../user'
 import { UserListService } from '../user-list.service'
-import { AddUserService } from "../add-user.service";
-import { AddUserDialogComponent } from "../add-user-dialog/add-user-dialog.component";
+import { AddEditUserService } from "../add-user.service";
+import { AddEditUserDialogComponent } from "../add-user-dialog/add-user-dialog.component";
 
 @Component({
   selector: 'app-user-list',
@@ -17,7 +17,7 @@ export class UserListComponent implements OnInit {
 
   constructor(
     private userListService: UserListService,
-    private addUserService: AddUserService,
+    private userService: AddEditUserService,
     public dialog: MatDialog
   ) { }
 
@@ -30,23 +30,47 @@ export class UserListComponent implements OnInit {
   }
 
   openAddUserDialog(): void {
-    const dialogRef = this.dialog.open(AddUserDialogComponent, {
+    const dialogRef = this.dialog.open(AddEditUserDialogComponent, {
       width: '350px',
       data: {}
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
       if (result) {
-        console.log(JSON.stringify(result));
         this.addUser(result);
       }
     });
   }
 
+  openEditUserDialog(user): void {
+
+    let editUser = Object.create(user);
+
+    const dialogRef = this.dialog.open(AddEditUserDialogComponent, {
+      width: '350px',
+      data: editUser
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        //if any field is edited
+        this.editUser(result);
+      }
+    });
+  }
+
   addUser(user): void {
-    this.addUserService.addUser(user).subscribe(response => {
+    this.userService.addUser(user).subscribe(response => {
       console.log('POST status', response.status);
+      this.getUsers();
+    })
+  }
+
+  editUser(user): void {
+
+    let userId= user.id;
+    delete user.id;
+    this.userService.editUser(userId, user).subscribe(response => {
       this.getUsers();
     })
   }

@@ -19,7 +19,7 @@
             <td>{{user.role}}</td>
             <td>{{user.status}}</td>
             <td>
-                <img src="../../assets/ico_edit.svg"/>
+                <img style="cursor: pointer;" (click)="openEditUserDialog(user)" src="../../assets/ico_edit.svg"/>
             </td>
         </tr>
     </table>

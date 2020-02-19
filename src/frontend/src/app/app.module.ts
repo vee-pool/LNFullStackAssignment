@@ -9,17 +9,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AddUserDialogComponent } from './add-user-dialog/add-user-dialog.component';
+import { AddEditUserDialogComponent } from './add-user-dialog/add-user-dialog.component';
 
 @NgModule({
   entryComponents: [
-    AddUserDialogComponent
+    AddEditUserDialogComponent
   ],
   declarations: [
     AppComponent,
     HeaderComponent,
     UserListComponent,
-    AddUserDialogComponent
+    AddEditUserDialogComponent
   ],
   imports: [
     BrowserModule,

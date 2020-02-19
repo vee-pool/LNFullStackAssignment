@@ -13,10 +13,10 @@ export interface DialogData {
   templateUrl: './add-user-dialog.component.html',
   styleUrls: ['./add-user-dialog.component.css']
 })
-export class AddUserDialogComponent implements OnInit {
+export class AddEditUserDialogComponent implements OnInit {
 
   constructor(
-    public dialogRef: MatDialogRef<AddUserDialogComponent>,
+    public dialogRef: MatDialogRef<AddEditUserDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
 
   
