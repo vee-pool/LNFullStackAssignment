@@ -32,7 +32,9 @@ export class UserListComponent implements OnInit {
   openAddUserDialog(): void {
     const dialogRef = this.dialog.open(AddEditUserDialogComponent, {
       width: '350px',
-      data: {}
+      data: {
+        actionButtonText: 'ADD USER'
+      },
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -46,6 +48,7 @@ export class UserListComponent implements OnInit {
 
     let editUser = Object.create(user);
 
+    editUser['actionButtonText'] = 'EDIT USER';
     const dialogRef = this.dialog.open(AddEditUserDialogComponent, {
       width: '350px',
       data: editUser

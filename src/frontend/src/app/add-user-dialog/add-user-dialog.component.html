@@ -13,8 +13,19 @@
     <mat-radio-button style="padding-right: 10px;" value="Admin">
       Admin
     </mat-radio-button>
-    <mat-radio-button checked="true" value="Customer Executive">
+    <mat-radio-button style="padding-bottom: 10px;" checked="true" value="Customer Executive">
       Customer Executive
+    </mat-radio-button>
+  </mat-radio-group>
+  <mat-radio-group *ngIf="data.actionButtonText == 'EDIT USER'" [(ngModel)]="data.status">
+    <mat-radio-button style="padding-right: 10px;" value="Active">
+      Active
+    </mat-radio-button>
+    <mat-radio-button style="padding-right: 10px;" value="Inactive">
+      Inactive
+    </mat-radio-button>
+    <mat-radio-button checked="true" style="padding-bottom: 10px;" value="Pending">
+      Pending
     </mat-radio-button>
   </mat-radio-group>
   <mat-form-field style="width: 300px;">
@@ -24,5 +35,5 @@
 </div>
   
 <div mat-dialog-actions>  
-  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>ADD USER</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>{{data.actionButtonText}}</button>
 </div>
