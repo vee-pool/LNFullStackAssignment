@@ -1,0 +1,25 @@
+.mat-form-field {
+    width: 300px;
+    border: 1px;
+}
+
+.submit-button {
+    width: 300px;
+    color: white;
+    background-color:orange
+}
+
+.input {
+    border: 1px;
+}
+.close-button {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    cursor: pointer;
+}
+
+.container {
+    width: auto;
+    position: relative;
+}

@@ -1,12 +1,15 @@
-<div style="width: auto">
-  <h1 mat-dialog-title>Add user</h1>
-  <mat-form-field style="width: 300px">
+<div class="container">
+  <img src="../../assets/ico_close.svg" class="close-button" [mat-dialog-close]="null">
+  <br>
+  <h1 *ngIf="data.actionButtonText == 'ADD USER'" mat-dialog-title>Add user</h1>
+  <h1 *ngIf="data.actionButtonText == 'EDIT USER'" mat-dialog-title>Edit user</h1>
+  <mat-form-field>
     <mat-label>Name</mat-label>
-    <input matInput [(ngModel)]="data.name">
+    <input class="textinput" matInput [(ngModel)]="data.name">
   </mat-form-field>
-  <mat-form-field style="width: 300px">
+  <mat-form-field>
     <mat-label>Email</mat-label>
-    <input matInput [(ngModel)]="data.email" email  >
+    <input class="textinput" matInput [(ngModel)]="data.email" email  >
   </mat-form-field>
   <br>
   <mat-radio-group [(ngModel)]="data.role">
@@ -28,12 +31,12 @@
       Pending
     </mat-radio-button>
   </mat-radio-group>
-  <mat-form-field style="width: 300px;">
+  <mat-form-field>
     <mat-label>Mobile Number (Optional)</mat-label>
     <input matInput [(ngModel)]="data.mobile_no">
   </mat-form-field>
 </div>
   
 <div mat-dialog-actions>  
-  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>{{data.actionButtonText}}</button>
+  <button class="submit-button" mat-button [mat-dialog-close]="data">{{data.actionButtonText}}</button>
 </div>

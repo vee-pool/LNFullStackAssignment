@@ -38,7 +38,8 @@ export class UserListComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result) {
+      //if result has any other key than actionButtonText
+      if (Object.keys(result).length > 1) {
         this.addUser(result);
       }
     });
@@ -55,7 +56,8 @@ export class UserListComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result) {
+      //if result has any other key than actionButtonText
+      if (Object.keys(result).length > 1) {
         //if any field is edited
         this.editUser(result);
       }
