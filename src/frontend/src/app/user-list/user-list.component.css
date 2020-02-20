@@ -1,13 +1,13 @@
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
   
   td, th {
-    border: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    padding-left: 30px;
   }
   
   tr:nth-child(even) {
@@ -37,7 +37,6 @@ table {
   .add-user {
   
     font-size: x-large;
-      font-family: Arial, Helvetica, sans-serif;
       display:inline-block;
       color:white;
       border:1px solid #CCC;
@@ -52,4 +51,9 @@ table {
       margin-left: auto;
       display: flex;
       align-items: center;
+  }
+
+  .parent-container {
+    border: 20px solid grey;
+    min-height: 80%;
   }

@@ -1,11 +1,11 @@
 .logo {
     display: block;
     text-indent: -9999px;
-    width: 100px;
+    width: 80px;
     height: 82px;
-    background-size: 100px 82px;
-    padding-left: 40px;
-    padding-right: 40px;
+    /* background-size: 100px 82px; */
+    padding-left: 20px;
+    padding-right: 0px;
   }
 
 .users {
@@ -13,9 +13,9 @@
     text-indent: -9999px;
     width: 50px;
     height: 50px;
-    background-size: 100px 82px;
+    /* background-size: 100px 82px; */
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 10px;
     /* background-color: darkgray; */
   }
 
@@ -24,9 +24,9 @@
     text-indent: -9999px;
     width: 30px;
     height: 30px;
-    background-size: 100px 82px;
+    /* background-size: 100px 82px; */
     padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 10px;
     /* background-color: darkgray; */
   }
 .dashboard {
@@ -35,9 +35,9 @@
     text-indent: -9999px;
     width: 30px;
     height: 30px;
-    background-size: 100px 82px;
+    /* background-size: 100px 82px; */
     padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 10px;
   }
 
 .notification {
@@ -46,14 +46,15 @@
       text-indent: -9999px;
       width: 30px;
       height: 30px;
-      background-size: 100px 82px;
-      padding-left: 250px;
+      /* background-size: 100px 82px; */
+      padding-left: 227px;
       padding-right: 5px;
       margin-left: auto;
     }
 
-.logged_in_user {
+.label-style {
   color: azure;
+  min-width: fit-content;
 }
 
 .user {
@@ -63,9 +64,9 @@
       width: 30px;
       height: 30px;
       background-size: 100px 82px;
-      padding-left: 5px;
-      padding-right: 25px;
-      margin-left: auto;
+      padding-left: 25px;
+      padding-right: 5px;
+      /* margin-left: auto; */
 }
 
 .downarrow {
@@ -75,12 +76,13 @@
       width: 30px;
       height: 30px;
       background-size: 100px 82px;
-      padding-left: 5px;
-      padding-right: 5px;
+      padding-left: 15px;
+      padding-right: 95px;
       margin-left: auto;
 }
 .header {
-  height: 90px;
+  height: 50px;
+  max-width: fit-content;
   background: black;
   display: flex;
   align-items: center;
