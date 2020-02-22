@@ -5,13 +5,18 @@ table {
   
   td, th {
     border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
     padding-left: 30px;
   }
   
-  tr:nth-child(even) {
+  tr:nth-child(odd) {
     background-color: #dddddd;
+  }
+
+  .thead {
+    background-color:white;
   }
 
   .users {
@@ -29,14 +34,14 @@ table {
 
   .menu-bar {
     height: 90px;
-    background: whitesmoke;
+    background: white;
     display: flex;
     align-items: center;
   }
 
   .add-user {
   
-    font-size: x-large;
+    font-size: large;
       display:inline-block;
       color:white;
       border:1px solid #CCC;
@@ -44,16 +49,18 @@ table {
       box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
       cursor:pointer;
       vertical-align:middle;
-      width: 150px;
-      height: 50px;
+      width: fit-content;
+      height: fit-content;
+      cursor: pointer;
       padding: 5px;
       text-align: center;
       margin-left: auto;
+      margin-right: 10px;
       display: flex;
       align-items: center;
   }
 
   .parent-container {
     border: 20px solid grey;
-    min-height: 80%;
+    min-height: 85%;
   }

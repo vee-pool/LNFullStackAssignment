@@ -2,16 +2,19 @@
     <div class="menu-bar">
         <img class="users" src="../../assets/ico_users.svg"/>
         <label style="font-size: x-large;">Users</label>
-        <button class="add-user" (click)="openAddUserDialog()">Add Users</button>
+        <div class="add-user" (click)="openAddUserDialog()">
+            <img src="../../assets/ico_add.svg" alt="">
+            <label for="" style="padding-left: 10px;">  Add Users</label>
+        </div>
     </div>
     <table>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Role Type</th>
-            <th>Status</th>
-            <th></th>
-        </tr>
+        <thead>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>ROLE TYPE</th>
+                <th>STATUS</th>
+                <th></th>
+        </thead>
     
         <tr *ngFor="let user of users">
             <td>{{user.name}}</td>

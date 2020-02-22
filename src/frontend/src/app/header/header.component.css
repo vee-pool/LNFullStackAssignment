@@ -1,8 +1,8 @@
 .logo {
     display: block;
     text-indent: -9999px;
-    width: 80px;
-    height: 82px;
+    width: 100px;
+    height: 60px;
     /* background-size: 100px 82px; */
     padding-left: 20px;
     padding-right: 0px;
@@ -77,11 +77,11 @@
       height: 30px;
       background-size: 100px 82px;
       padding-left: 15px;
-      padding-right: 95px;
+      padding-right: 25px;
       margin-left: auto;
 }
 .header {
-  height: 50px;
+  height: 60px;
   max-width: fit-content;
   background: black;
   display: flex;
