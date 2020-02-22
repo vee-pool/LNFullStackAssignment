@@ -1,7 +1,7 @@
 .logo {
     display: block;
     text-indent: -9999px;
-    width: 100px;
+    width: fit-content;
     height: 60px;
     /* background-size: 100px 82px; */
     padding-left: 20px;
@@ -47,7 +47,7 @@
       width: 30px;
       height: 30px;
       /* background-size: 100px 82px; */
-      padding-left: 227px;
+      padding-left: 160px;
       padding-right: 5px;
       margin-left: auto;
     }
@@ -77,12 +77,13 @@
       height: 30px;
       background-size: 100px 82px;
       padding-left: 15px;
-      padding-right: 25px;
+      /* padding-right: 0px; */
       margin-left: auto;
 }
 .header {
   height: 60px;
-  max-width: fit-content;
+  max-width: inherit;
+  overflow: hidden;
   background: black;
   display: flex;
   align-items: center;
