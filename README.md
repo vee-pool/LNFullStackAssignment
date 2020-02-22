@@ -33,7 +33,7 @@
       >> npm install
       >> set DEBUG=backend:* & npm start
       
-  ## Fronted
+  ## Frontend
     To run:
     cd to package.json folder
     >> npm install
