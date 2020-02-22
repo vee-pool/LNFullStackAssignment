@@ -32,3 +32,11 @@
       In backend folder, do following commands
       >> npm install
       >> set DEBUG=backend:* & npm start
+      
+  ## Fronted
+    To run:
+    cd to package.json folder
+    >> npm install
+    configure API URL in src/environments/environments.ts
+    in package.json folder
+    >> ng serve --open
